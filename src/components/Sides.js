@@ -9,6 +9,7 @@ function Sides({ side }) {
                 <div>
                     <h2>{side.name}</h2>
                     <p>{side.description}</p>
+                    <p>Price: ${side.price.toFixed(2)}</p> 
                 </div>
             </div>
         </div>

@@ -1,0 +1,45 @@
+:root {
+    --red: #C8102E;
+    --gold: #FFD700;
+}
+
+.drinks-container {
+    background-color: var(--gold);
+    padding: 20px;
+}
+
+.drinks-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 20px; 
+    justify-items: center; 
+    align-content: center; 
+}
+
+.drink {
+    border: 1px solid var(--red);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 200px;
+}
+
+.drink img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.drink h2 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--red);
+}
+
+.drink p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}

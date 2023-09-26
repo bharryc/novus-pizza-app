@@ -1,7 +1,7 @@
 import React from "react";
-import "./SidesGrid.css"; 
+import "./SidesGrid.css";
 
-function Sides({ side }) {
+function Sides({ side, addToBasket }) {
     return (
         <div className="side">
             <div className="side-info">
@@ -9,9 +9,14 @@ function Sides({ side }) {
                 <div>
                     <h2>{side.name}</h2>
                     <p>{side.description}</p>
-                    <p>Price: ${side.price.toFixed(2)}</p> 
+                    <p>Price: ${side.price.toFixed(2)}</p>
                 </div>
             </div>
+
+            <button className="add-button" onClick={() => addToBasket({side: side.name, 
+                price: side.price})}>
+                Add
+            </button>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./DrinksGrid.css"; 
 
-function Drinks({ drink }) {
+function Drinks({ drink , addToBasket}) {
   return (
     <div className="drink">
       <div className="drink-info">
@@ -12,6 +12,10 @@ function Drinks({ drink }) {
           <p>Price: ${drink.price.toFixed(2)}</p> 
         </div>
       </div>
+      <button className="add-button" onClick={() => addToBasket({drink: drink.name, 
+                price: drink.price})}>
+                Add
+            </button>
     </div>
   );
 }

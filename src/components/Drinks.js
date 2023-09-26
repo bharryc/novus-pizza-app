@@ -9,6 +9,7 @@ function Drinks({ drink }) {
         <div>
           <h2>{drink.name}</h2>
           <p>{drink.description}</p>
+          <p>Price: ${drink.price.toFixed(2)}</p> 
         </div>
       </div>
     </div>

@@ -31,7 +31,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="header-section">
         <h1 className="page-name">Big Tony's Pizzas</h1>
+          <p className="page-text">Big Pizzas, Even Bigger Prices</p>
+          </div>
       </header>
 
       <nav className="menu-nav">

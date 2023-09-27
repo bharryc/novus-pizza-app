@@ -51,4 +51,13 @@
   .page-name {
     font-size: 70px;
     font-weight: bold;
+    margin-bottom: 0;
   }
+
+  .page-text {
+    font-size: 18px; 
+    color: #666; 
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  

@@ -8,9 +8,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 16.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/M.png"
     },
@@ -23,9 +23,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 16.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/VF.png"
     },
@@ -38,9 +38,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 16.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/VH.png"
     },
@@ -53,9 +53,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/P.png"
     },
@@ -68,9 +68,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/MF.png"
     },
@@ -83,9 +83,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/H.png"
     },
@@ -98,9 +98,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/PH.png"
     },
@@ -113,9 +113,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: false,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/S_P.png"
     },
@@ -128,9 +128,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: true,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/GF-M.png"
     },
@@ -143,9 +143,9 @@ const PizzaInfo = [
         isVegan: false,
         isGlutenFree: true,
         price: {
-            small: 12.99,
-            medium: 15.99,
-            large: 17.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/GF-MF.png"
     },
@@ -158,9 +158,9 @@ const PizzaInfo = [
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 15.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/V-M.png"
     },
@@ -173,9 +173,9 @@ const PizzaInfo = [
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 15.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/V-VF.png"
     },
@@ -188,9 +188,9 @@ const PizzaInfo = [
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 15.99
+            small: 19.99,
+            medium: 24.99,
+            large: 29.99
         }, 
         image: "/images/V-H.png"
     },
@@ -203,9 +203,9 @@ const PizzaInfo = [
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 15.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/V-VH.png"
     },
@@ -218,9 +218,9 @@ const PizzaInfo = [
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 10.99,
-            medium: 13.99,
-            large: 15.99
+            small: 16.99,
+            medium: 19.99,
+            large: 24.99
         }, 
         image: "/images/V-MF.png"
     },
@@ -231,9 +231,9 @@ const PizzaInfo = [
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
         sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
         price: {
-            small: 15.99,
-            medium: 17.99,
-            large: 19.99
+            small: 24.99,
+            medium: 29.99,
+            large: 34.99
         }, 
         image: "/images/HnH.png"
     }

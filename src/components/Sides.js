@@ -13,7 +13,7 @@ function Sides({ side, addToBasket }) {
                 </div>
             </div>
 
-            <button className="add-button" onClick={() => addToBasket({side: side.name, 
+            <button className="add-button" onClick={() => addToBasket({type: "side", side: side.name, 
                 price: side.price})}>
                 Add
             </button>

@@ -5,6 +5,7 @@ import Drinks from "./components/Drinks";
 import PizzaInfo from "./PizzaInfo";
 import SidesInfo from "./SidesInfo";
 import DrinksInfo from "./DrinksInfo";
+import BasketWindow from "./components/BasketWindow"; 
 import "./App.css";
 
 function App() {
@@ -18,23 +19,48 @@ function App() {
   const [basket, setBasket] = useState([]);
   const [isButtonRed, setIsButtonRed] = useState(false);
 
-  // debugging stuff will remove 
+  const [isBasketWindowOpen, setIsBasketWindowOpen] = useState(false);
+
+
+  const openBasketWindow = () => {
+    setIsBasketWindowOpen(true);
+  };
+  
+  const closeBasketWindow = () => {
+    setIsBasketWindowOpen(false);
+  };
+  // debugging stuff will remove
   useEffect(() => {
     console.log("Basket Contents:", basket);
   }, [basket]);
 
   const addToBasket = (item) => {
     setBasket([...basket, item]);
-    setIsButtonRed(false); 
+    setIsButtonRed(false);
   };
 
   return (
     <div className="App">
+      <img
+        src={"/images/basket.png"}
+        alt="Basket"
+        className="basket"
+        onClick={openBasketWindow} 
+        
+      />
+
+      <BasketWindow
+        isOpen={isBasketWindowOpen}
+        onClose={closeBasketWindow}
+        basket={basket}
+        setBasket={setBasket} 
+      />
+
       <header className="App-header">
         <div className="header-section">
-        <h1 className="page-name">Big Tony's Pizzas</h1>
+          <h1 className="page-name">Big Tony's Pizzas</h1>
           <p className="page-text">Big Pizzas, Even Bigger Prices</p>
-          </div>
+        </div>
       </header>
 
       <nav className="menu-nav">

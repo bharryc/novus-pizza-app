@@ -22,6 +22,8 @@ function Pizza({ pizza, className, addToBasket }) {
       setSelectedPrice(pizza.price.medium);
     } else if (size === "large") {
       setSelectedPrice(pizza.price.large);
+    }else if (size === "xl"){
+      setSelectedPrice(pizza.price.xl);
     }
   };
 
@@ -47,26 +49,28 @@ function Pizza({ pizza, className, addToBasket }) {
         setIsButtonRed(true);
       } else {
         addToBasket({
+          type: "pizza",
           pizza: pizza.name,
-          half1: getPizzaName(parseInt(selectedHalf1)), 
-          half2: getPizzaName(parseInt(selectedHalf2)), 
-          base: selectedBase,
-          size: selectedSize,
-          price: selectedPrice.toFixed(2)
+          half1: getPizzaName(parseInt(selectedHalf1)),
+          half2: getPizzaName(parseInt(selectedHalf2)),
+          base: selectedBase, 
+          size: selectedSize, 
+          price: selectedPrice.toFixed(2),
         });
-        setIsButtonRed(false); 
+        setIsButtonRed(false);
       }
     } else {
       if (!selectedBase || !selectedSize) {
-        setIsButtonRed(true); 
+        setIsButtonRed(true);
       } else {
         addToBasket({
+          type: "pizza",
           pizza: pizza.name,
-          base: selectedBase,
-          size: selectedSize,
+          base: selectedBase, 
+          size: selectedSize, 
           price: selectedPrice.toFixed(2),
         });
-        setIsButtonRed(false); 
+        setIsButtonRed(false);
       }
     }
   };
@@ -142,9 +146,10 @@ function Pizza({ pizza, className, addToBasket }) {
                         value={selectedSize}
                         onChange={handleSizeChange}
                     >
-                        <option value="small">Small (8")</option>
-                        <option value="medium">Medium (12")</option>
-                        <option value="large">Large (16")</option>
+                        <option value="small">Small (12")</option>
+                        <option value="medium">Medium (16")</option>
+                        <option value="large">Large (20")</option>
+                        <option value="xl">XL (24")</option>
                     </select>
                 </div>
 

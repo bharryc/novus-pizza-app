@@ -4,13 +4,14 @@ const PizzaInfo = [
         name: "Margherita",
         description: "Classic tomato and cheese",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/M.png"
     },
@@ -19,13 +20,14 @@ const PizzaInfo = [
         name: "Veggie Feast",
         description: "Vegetable mix and cheese",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/VF.png"
     },
@@ -34,13 +36,14 @@ const PizzaInfo = [
         name: "Veggie Hot",
         description: "Mixture of hot peppers and cheese",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/VH.png"
     },
@@ -49,13 +52,14 @@ const PizzaInfo = [
         name: "Pepperoni",
         description: "Crispy pepperoni and cheese",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 19.99,
             medium: 24.99,
-            large: 29.99
+            large: 29.99,
+            xl: 34.99
         }, 
         image: "/images/P.png"
     },
@@ -64,13 +68,14 @@ const PizzaInfo = [
         name: "Meat Feast",
         description: "Mixture of meats",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 19.99,
             medium: 24.99,
-            large: 29.99
+            large: 29.99,
+            xl: 34.99
         }, 
         image: "/images/MF.png"
     },
@@ -79,13 +84,14 @@ const PizzaInfo = [
         name: "Hawaiian",
         description: "Ham and Pineapple",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 19.99,
             medium: 24.99,
-            large: 29.99
+            large: 29.99,
+            xl: 34.99
         }, 
         image: "/images/H.png"
     },
@@ -94,13 +100,14 @@ const PizzaInfo = [
         name: "Hot Pepperoni",
         description: "Pepperoni and chillies",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 19.99,
             medium: 24.99,
-            large: 29.99
+            large: 29.99,
+            xl: 34.99
         }, 
         image: "/images/PH.png"
     },
@@ -109,13 +116,14 @@ const PizzaInfo = [
         name: "Sausage and Pepperoni",
         description: "Sausage and pepperoni",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: false,
         price: {
             small: 19.99,
             medium: 24.99,
-            large: 29.99
+            large: 29.99,
+            xl: 34.99
         }, 
         image: "/images/S_P.png"
     },
@@ -124,13 +132,14 @@ const PizzaInfo = [
         name: "Gluten-Free Margherita",
         description: "Gluten-Free cheese and tomato",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: true,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/GF-M.png"
     },
@@ -139,13 +148,14 @@ const PizzaInfo = [
         name: "Gluten-Free Meat Feast",
         description: "Gluten-Free meat feast",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: false,
         isGlutenFree: true,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/GF-MF.png"
     },
@@ -154,13 +164,13 @@ const PizzaInfo = [
         name: "Vegan Margherita",
         description: "Vegan cheese and tomato",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
-        isVegan: true,
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/V-M.png"
     },
@@ -169,13 +179,14 @@ const PizzaInfo = [
         name: "Vegan Veggie Feast",
         description: "Vegan cheese and vegetable mix",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: true,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/V-VF.png"
     },
@@ -184,13 +195,14 @@ const PizzaInfo = [
         name: "Vegan Hawaiian",
         description: "Vegan ham and pineapple",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: true,
         isGlutenFree: false,
         price: {
-            small: 19.99,
-            medium: 24.99,
-            large: 29.99
+            small: 16.99,
+            medium: 20.99,
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/V-H.png"
     },
@@ -199,13 +211,14 @@ const PizzaInfo = [
         name: "Vegan Veggie Hot",
         description: "Vegan cheese and hot pepper mix",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: true,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/V-VH.png"
     },
@@ -214,13 +227,14 @@ const PizzaInfo = [
         name: "Vegan Meat Feast",
         description: "Vegan cheese and vegan meat",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         isVegan: true,
         isGlutenFree: false,
         price: {
             small: 16.99,
             medium: 19.99,
-            large: 24.99
+            large: 24.99,
+            xl: 29.99
         }, 
         image: "/images/V-MF.png"
     },
@@ -229,11 +243,12 @@ const PizzaInfo = [
         name: "50/50", 
         description: "Half n half pizza",
         bases: ["Thin Italian", "Stone Crust", "Cheese Stuffed Crust", "Vegan", "Gluten-Free"],
-        sizes: ["Small (8\")", "Medium (12\")", "Large (16\")"],
+        sizes: ["Small (12\")", "Medium (16\")", "Large (20\")", "XL (24\")"],
         price: {
             small: 24.99,
             medium: 29.99,
-            large: 34.99
+            large: 34.99,
+            xl: 39.99
         }, 
         image: "/images/HnH.png"
     }

@@ -12,8 +12,10 @@ function Drinks({ drink , addToBasket}) {
           <p>Price: ${drink.price.toFixed(2)}</p> 
         </div>
       </div>
-      <button className="add-button" onClick={() => addToBasket({drink: drink.name, 
-                price: drink.price})}>
+      <button className="add-button" onClick={() => addToBasket({
+        type: "drink",
+        drink: drink.name, 
+        price: drink.price})}>
                 Add
             </button>
     </div>

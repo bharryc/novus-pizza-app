@@ -1,7 +1,9 @@
+//import react component and css
 import React from "react";
-import "./DrinksGrid.css"; 
+import "./DrinksGrid.css";
 
-function Drinks({ drink , addToBasket}) {
+//displays the drink component
+function Drinks({ drink, addToBasket }) {
   return (
     <div className="drink">
       <div className="drink-info">
@@ -9,15 +11,17 @@ function Drinks({ drink , addToBasket}) {
         <div>
           <h2>{drink.name}</h2>
           <p>{drink.description}</p>
-          <p>Price: ${drink.price.toFixed(2)}</p> 
+          <p>Price: ${drink.price.toFixed(2)}</p>
         </div>
       </div>
+      {/*button to add to basket*/}
       <button className="add-button" onClick={() => addToBasket({
         type: "drink",
-        drink: drink.name, 
-        price: drink.price})}>
-                Add
-            </button>
+        drink: drink.name,
+        price: drink.price
+      })}>
+        Add
+      </button>
     </div>
   );
 }

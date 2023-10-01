@@ -3,6 +3,7 @@
     --gold: #FFD700;
 }
 
+/*styling for  drink container*/
 .drinks-container {
     background-color: var(--gold);
     padding: 20px;
@@ -10,10 +11,10 @@
 
 .drinks-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    grid-gap: 20px; 
-    justify-items: center; 
-    align-content: center; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
 }
 
 .drink {

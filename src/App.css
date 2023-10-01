@@ -1,71 +1,75 @@
+/*meny styling*/
 .menu-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: center; 
-  }
-  
-  .menu-nav li {
-    margin: 0 20px; 
-  }
-  
-  .menu-nav a {
-    text-decoration: none;
-    color: #000; 
-    font-weight: bold; 
-  }
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
 
-  .nav-item {
-    font-size: 40px; 
-    font-weight: bold;
-    cursor: pointer;
-    
-  }
+.menu-nav li {
+  margin: 0 20px;
+}
 
-  .pizza-container {
-    margin-top: 60px;
-    margin-bottom: 60px; 
-  }
-  
-  .sides-container {
-    margin-top: 60px;
-    margin-bottom: 60px; 
-  }
-  
-  .drinks-container {
-    margin-top: 60px;
-    margin-bottom: 60px; 
-  }
-  
-  .menu-nav {
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
+.menu-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
 
-  .section-head {
-    display: flex;
-    padding: 0;
-    justify-content: center;
-  }
+.nav-item {
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 
-  .page-name {
-    font-size: 70px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
+}
 
-  .page-text {
-    font-size: 18px; 
-    color: #666; 
-    margin-top: 0;
-    margin-left: 10px;
-  }
-  
-  .basket{
-    position: fixed;
-    top: 8px; 
-    right: 8px; 
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
+/*item container styling*/
+.pizza-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.sides-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.drinks-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/*styling for items at top of page*/
+.menu-nav {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.section-head {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.page-name {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.page-text {
+  font-size: 18px;
+  color: #666;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+/*basket styling*/
+.basket {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}

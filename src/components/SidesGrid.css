@@ -3,6 +3,7 @@
     --gold: #FFD700;
 }
 
+/*styling for the sides container grid*/
 .sides-container {
     background-color: var(--gold);
     padding: 20px;
@@ -10,10 +11,10 @@
 
 .sides-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    grid-gap: 20px; 
-    justify-items: center; 
-    align-content: center; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
 }
 
 .side {

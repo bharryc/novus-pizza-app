@@ -1,6 +1,8 @@
+//import react component and css
 import React from "react";
 import "./SidesGrid.css";
 
+//displays the sides component
 function Sides({ side, addToBasket }) {
     return (
         <div className="side">
@@ -12,9 +14,11 @@ function Sides({ side, addToBasket }) {
                     <p>Price: ${side.price.toFixed(2)}</p>
                 </div>
             </div>
-
-            <button className="add-button" onClick={() => addToBasket({type: "side", side: side.name, 
-                price: side.price})}>
+            {/*button to add to basket*/}
+            <button className="add-button" onClick={() => addToBasket({
+                type: "side", side: side.name,
+                price: side.price
+            })}>
                 Add
             </button>
         </div>

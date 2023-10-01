@@ -8,9 +8,10 @@
 
 body {
     background-color: var(--gold);
-    
+
 }
 
+/*styling for pizza grid*/
 .pizza-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -26,7 +27,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     width: 200px;
-   
+
 }
 
 .pizza img {
@@ -40,7 +41,7 @@ body {
     font-size: 20px;
     margin: 0;
     color: var(--red);
-  
+
 }
 
 .pizza p {
@@ -55,30 +56,30 @@ body {
 
 }
 
+/*styling for the add button - green when can add red when cant*/
 .add-button {
     background-color: green;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  }
-  
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-  .add-button:hover {
+.add-button:hover {
     background-color: darkgreen;
-  }
+}
 
-  .pizza-halves {
+.pizza-halves {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .add-button.red {
+.add-button.red {
     background-color: #FF0000;
-  }
-  
-  .add-button.green {
+}
+
+.add-button.green {
     background-color: #4CAF50;
-  }
+}

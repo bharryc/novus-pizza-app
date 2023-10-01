@@ -1,3 +1,4 @@
+//import react and app components
 import React, { useState, useEffect } from "react";
 import Pizza from "./components/Pizza";
 import Sides from "./components/Sides";
@@ -5,10 +6,12 @@ import Drinks from "./components/Drinks";
 import PizzaInfo from "./PizzaInfo.json";
 import SidesInfo from "./SidesInfo.json";
 import DrinksInfo from "./DrinksInfo.json";
-import BasketWindow from "./components/BasketWindow"; 
+import BasketWindow from "./components/BasketWindow";
 import "./App.css";
 
 function App() {
+
+  //scrolls to point on screen 
   const scroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -16,26 +19,26 @@ function App() {
     }
   };
 
+  //state variables for basket and showing the basket
   const [basket, setBasket] = useState([]);
   const [isButtonRed, setIsButtonRed] = useState(false);
-
   const [isBasketWindowOpen, setIsBasketWindowOpen] = useState(false);
 
-
+  //function to add and remove item from basket
   const openBasketWindow = () => {
     setIsBasketWindowOpen(true);
   };
-  
+
   const closeBasketWindow = () => {
     setIsBasketWindowOpen(false);
   };
-  // debugging stuff will remove
-  useEffect(() => {
-    console.log("Basket Contents:", basket);
-  }, [basket]);
 
+  // debugging stuff
+  // useEffect(() => {
+  //   console.log("Basket Contents:", basket);
+  // }, [basket]);
 
-  
+  //adds item to basket 
   const addToBasket = (item) => {
     setBasket([...basket, item]);
     setIsButtonRed(false);
@@ -43,21 +46,23 @@ function App() {
 
   return (
     <div className="App">
+      {/*display the basket icon + functionality on click*/}
       <img
         src={"/images/basket.png"}
         alt="Basket"
         className="basket"
-        onClick={openBasketWindow} 
-        
-      />
+        onClick={openBasketWindow}
 
+      />
+      {/*display the basket window */}
       <BasketWindow
         isOpen={isBasketWindowOpen}
         onClose={closeBasketWindow}
         basket={basket}
-        setBasket={setBasket} 
+        setBasket={setBasket}
       />
 
+      {/*text at top of page*/}
       <header className="App-header">
         <div className="header-section">
           <h1 className="page-name">Big Tony's Pizzas</h1>
@@ -65,6 +70,7 @@ function App() {
         </div>
       </header>
 
+      {/*navigation at top of page + scroll to point on page*/}
       <nav className="menu-nav">
         <ul>
           <li onClick={() => scroll("pizza-menu")} className="nav-item">
@@ -79,6 +85,7 @@ function App() {
         </ul>
       </nav>
 
+      {/*pizza section rendering*/}
       <main>
         <h2 id="pizza" className="section-head">
           Pizza
@@ -96,6 +103,7 @@ function App() {
           ))}
         </div>
 
+        {/*sides section rendering*/}
         <h2 id="sides" className="section-head">
           Sides
         </h2>
@@ -109,6 +117,7 @@ function App() {
           ))}
         </div>
 
+        {/*drinks section rendering*/}
         <h2 id="drinks" className="section-head">
           Drinks
         </h2>

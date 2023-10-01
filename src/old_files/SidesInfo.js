@@ -1,3 +1,4 @@
+//old drinks info - replaced with json files
 const SidesInfo = [
     {
         id: 1, 

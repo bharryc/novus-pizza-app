@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Pizza from "./components/Pizza";
 import Sides from "./components/Sides";
 import Drinks from "./components/Drinks";
-import PizzaInfo from "./PizzaInfo";
-import SidesInfo from "./SidesInfo";
-import DrinksInfo from "./DrinksInfo";
+import PizzaInfo from "./PizzaInfo.json";
+import SidesInfo from "./SidesInfo.json";
+import DrinksInfo from "./DrinksInfo.json";
 import BasketWindow from "./components/BasketWindow"; 
 import "./App.css";
 
@@ -34,6 +34,8 @@ function App() {
     console.log("Basket Contents:", basket);
   }, [basket]);
 
+
+  
   const addToBasket = (item) => {
     setBasket([...basket, item]);
     setIsButtonRed(false);

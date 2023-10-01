@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PizzaGrid.css";
-import PizzaInfo from "../PizzaInfo";
+// import PizzaInfo from "../PizzaInfo";
+import PizzaInfo from "../PizzaInfo.json";
 
 function Pizza({ pizza, className, addToBasket }) {
   const [selectedBase, setSelectedBase] = useState("");

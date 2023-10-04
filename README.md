@@ -1,3 +1,12 @@
+Dependancies: 
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+
+
+
 Assessment Task: Advanced Web Development Project
 Aim:
 In this advanced web development assessment, you will be challenged to create a dynamic and
